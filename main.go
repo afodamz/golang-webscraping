@@ -27,7 +27,7 @@ func main() {
 		colly.AllowedDomains("factretriever.com/", "www.lindaikejisblog.com/"),
 	)
 
-	collector.OnHTML(".factsList li", func(element *colly.HTMLElement) {
+	collector.OnHTML(".factsList li", func(element *colly.HTMLElement) {git remote add origin https://github.com/afodamz/golang-webscraping.git
 		id,err := strconv.Atoi(element.Attr("id"))
 		if err != nil {
 			log.Println("Could not get id")

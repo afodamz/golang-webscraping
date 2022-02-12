@@ -1,0 +1,1 @@
+A golang app used to scrape data from any website
